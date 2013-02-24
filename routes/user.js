@@ -19,7 +19,8 @@ exports.verify = function(req, res){
         var nonce=  req.query.nonce+"";
 var timestamp= req.query.timestamp+"";
     var token = nonce+timestamp+"gengjiabin";
-if(str_sha1(token) == req.query.signature){
+    
+if(hex_sha1(token) == req.query.signature){
 
   res.send(req.query.echostr);
 }else{
