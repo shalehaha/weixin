@@ -42,14 +42,14 @@ exports.message = function(req, res){
     console.log(req.body);
     res.set('Content-Type', 'text/xml');
 
-res.send(' \<xml\>
- \<ToUserName\>ocJKRjou__erX0aoktvx_aUvhFmc\</ToUserName\>
- \<FromUserName\>gh_75215e5b79da\</FromUserName\>
- \<CreateTime\>1361892902\</CreateTime\>
- \<MsgType\>text\</MsgType\>
- \<Content\>testtest\</Content\>
- \<FuncFlag\>0\</FuncFlag\>
- \</xml\>');
+res.send(' \<xml\>'+
+ '\<ToUserName\>ocJKRjou__erX0aoktvx_aUvhFmc\</ToUserName\>'+
+ '\<FromUserName\>gh_75215e5b79da\</FromUserName\>'+
+ '\<CreateTime\>1361892902\</CreateTime\>'+
+ '\<MsgType\>text\</MsgType\>'+
+ '\<Content\>testtest\</Content\>'+
+ '\<FuncFlag\>0\</FuncFlag\>'+
+ '\</xml\>');
     
 };
 
