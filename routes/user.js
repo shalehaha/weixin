@@ -9,7 +9,7 @@ exports.list = function(req, res){
 
 
 exports.verify = function(req, res){
-  
+  console.log(req.headers);
     console.log(req.query.signature);
     console.log(req.query.timestamp);
     console.log(req.query.nonce);
@@ -33,7 +33,8 @@ if(hex_sha1(token) == req.query.signature){
 
 
 exports.message = function(req, res){
-  
+    console.log(req.headers);
+
     console.log(req.query.signature);
     console.log(req.query.timestamp);
     console.log(req.query.nonce);
